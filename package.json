@@ -1,0 +1,36 @@
+{
+  "name": "ai-dating-profile-stylist",
+  "version": "1.0.0",
+  "description": "AI Dating Profile Stylist - Create magnetic dating profiles",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "dating",
+    "profile",
+    "ai",
+    "stylist"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "framer-motion": "^10.16.4",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^13.5.4",
+    "postcss": "^8.4.31"
+  }
+}

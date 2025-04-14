@@ -1,0 +1,9 @@
+/* Custom CSS to hide the "Made with Manus" stamp */
+.manus-badge {
+  display: none !important;
+}
+
+/* Additional CSS to ensure any other Manus branding is hidden */
+[class*="manus"], [id*="manus"] {
+  display: none !important;
+}

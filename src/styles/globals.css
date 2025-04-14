@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --deep-rose: #BE233D;
+  --soft-gold: #E5CD7B;
+  --teal: #73B2AC;
+  --slate-lavender: #ABBAD1;
+  --steel-navy: #718BA4;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-card p-6 max-w-md mx-auto;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-full font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-deep-rose text-white hover:bg-opacity-90;
+}
+
+.btn-secondary {
+  @apply bg-teal text-white hover:bg-opacity-90;
+}
+
+.btn-outline {
+  @apply border border-deep-rose text-deep-rose hover:bg-deep-rose hover:bg-opacity-10;
+}
+
+.input-field {
+  @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-rose;
+}
+
+.progress-bar {
+  @apply h-2 bg-slate-lavender rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-deep-rose transition-all duration-300;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--soft-gold);
+  animation: confetti-fall 3s ease-in-out infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
