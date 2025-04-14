@@ -5,4 +5,5 @@ module.exports = {
   },
   trailingSlash: true,
   output: 'export',
+  distDir: "out"
 }
